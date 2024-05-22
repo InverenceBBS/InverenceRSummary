@@ -1,0 +1,19 @@
+Package: InverenceRSummary
+Type: Package
+Title: Extended Summaries of R Vectors and Tables
+Version: 0.1.0
+Authors@R: person("Víctor", "de Buen", email = "victor.debuen@inverence.com", 
+  role = c("aut", "cre"))
+Description: Extended Summaries of R Vectors and Tables
+License: `use_gpl3_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+LazyData: true
+Imports:
+    DT,
+    plotly
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
