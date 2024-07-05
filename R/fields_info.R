@@ -180,6 +180,7 @@ GetFieldsInfo <- function(data, digits=4, id_fields=NULL)
     # toc()
     rm(v)
     gc()
+    return(st)
   }
   stats = as.data.frame(do.call(rbind, lapply(1:ncol(data), function(j){
     suppressWarnings(ColStats(j))
@@ -195,5 +196,5 @@ GetFieldsInfo <- function(data, digits=4, id_fields=NULL)
   stats$zero_pcn  = as.integer(stats$zero_pcn)
   stats$nlevels  = as.numeric(stats$nlevels)
   stats$entropyRatio = as.numeric(stats$entropyRatio)
-  stats
+  return(stats)
 }
